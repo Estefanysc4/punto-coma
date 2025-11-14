@@ -25,6 +25,33 @@ En Punto & Coma, estudiantes e independientes hacen encargos de impresión y ani
 5. el programa no acepto cantidates menores o igaules que cero.
 
 ## reglas del programa 
- 1. no aceptar cantidades ≤ 0
- 2. no se gestiona inventario ni pagos
+Ítem               Precio normal  Precio por volumen Condición volumen 
 
+ Impresión B/N      $200           $150               ≥ 100 unidades    
+ Impresión Color  $500           $400                ≥ 50 unidades     
+ Anillado         $3.000         No aplica          —
+
+![image](./assets/uml.jpg)
+![image](./assets/prueba.jpeg)
+![image](./assets/prueba2.jpeg)
+
+
+## estructura del programa
+PapeleriaPuntoYComa/
+│
+├── src/
+│   └── papeleria/
+│       ├── dominio/
+│       │   ├── Cliente.java
+│       │   ├── Item.java
+│       │   ├── Anillado.java
+│       │   ├── ImpresionBN.java
+│       │   ├── ImpresionColor.java
+│       │   └── Pedido.java
+│       │
+│       ├── servicio/
+│       │   └── PedidoService.java
+│       │
+│       └── Main.java
+│
+└── README.md
